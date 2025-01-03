@@ -12,11 +12,11 @@ Este submódulo contiene la interfaz de usuario construida con React para el pro
 - [Enlaces](#enlaces)
 
 ## Descripción
-El frontend permite a los usuarios interactuar con el sistema de gestión de fincas, visualizar datos en tiempo real de los sensores y controlar los actuadores de las fincas.
+El frontend permite a los usuarios interactuar con el sistema de gestión de fincas, visualizar datos en tiempo real de los sensores y gestionar los recursos disponibles.
 
 ## Requisitos
-- TODO: Lista de dependencias específicas del frontend
-- [Cualquier otro requisito necesario]
+- Node.js (versión 14 o superior)
+- npm (versión 6 o superior)
 
 ## Instalación
 
@@ -26,26 +26,39 @@ El frontend permite a los usuarios interactuar con el sistema de gestión de fin
     git submodule update
     ```
 
-2. Instala las dependencias:
+2. Navega al directorio del frontend:
     ```bash
-    TODO: comando de instalación
+    cd fingesco-frontend
+    ```
+
+3. Instala las dependencias:
+    ```bash
+    npm install
     ```
 
 ## Uso
-TODO: Instrucciones para correr el frontend
+
+1. Inicia la aplicación:
+    ```bash
+    npm start
+    ```
+
+2. Abre tu navegador y navega a `http://localhost:3000` para ver la aplicación en funcionamiento.
 
 ## Contribución
 
-Si deseas contribuir a este submódulo, sigue estos pasos:
-
-1. Realiza un fork del repositorio principal.
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Agrega nueva característica'`).
-4. Envía un pull request.
+1. Haz un fork del proyecto.
+2. Crea una nueva rama (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -am 'Añadir nueva funcionalidad'`).
+4. Sube tus cambios a tu fork (`git push origin feature/nueva-funcionalidad`).
+5. Crea un nuevo Pull Request.
 
 ## Licencia
 
-Este proyecto está bajo la GNU Affero General Public License v3.0 - consulta el archivo LICENSE para más detalles.
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 ## Enlaces
-- [Repositorio Principal de Fingesco](https://github.com/AlfonsoJPH/fingesco)
+
+- [Documentación de React](https://reactjs.org/docs/getting-started.html)
+- [Documentación de Axios](https://axios-http.com/docs/intro)
+- [Documentación de Docker](https://docs.docker.com/)

@@ -1,5 +1,5 @@
-# Usar una imagen base de Node.js
-FROM node:14-alpine
+# Usar una imagen base de Node.js para construir la aplicación
+FROM node:14-alpine AS build
 
 # Establecer el directorio de trabajo
 WORKDIR /app
@@ -20,7 +20,7 @@ RUN npm run build
 FROM nginx:alpine
 
 # Copiar los archivos de construcción de React al directorio de Nginx
-COPY --from=0 /app/build /usr/share/nginx/html
+COPY --from=build /app/build /usr/share/nginx/html
 
 # Exponer el puerto 80
 EXPOSE 80

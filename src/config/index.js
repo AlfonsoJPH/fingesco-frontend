@@ -1,6 +1,6 @@
 let endpointURL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:3001';
 if (!/^http/.test(endpointURL)) {
-  endpointURL = 'http://' + endpointURL;
+  endpointURL = 'https://' + endpointURL;
   console.log('endpointURL:', endpointURL);
 }
 if (process.env.REACT_APP_DOMAIN) {
